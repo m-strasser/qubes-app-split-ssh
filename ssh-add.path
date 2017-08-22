@@ -1,0 +1,8 @@
+[Unit]
+Description=Monitors /tmp/qubes-session-env which contains $SOCK_AUTH_SSH and then starts the ssh-add.service
+
+[Path]
+PathExists=/tmp/qubes-session-env
+
+[Install]
+WantedBy=default.target

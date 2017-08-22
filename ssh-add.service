@@ -1,0 +1,6 @@
+[Unit]
+Description=Calls ssh-add.sh which adds your ssh-keys to your ssh-agent.
+
+[Service]
+Type=oneshot
+ExecStart=/home/user/.ssh-add.sh
